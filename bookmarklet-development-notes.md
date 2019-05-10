@@ -14,7 +14,7 @@ This will be a very short note.
 All are draggable and to create bookmark!
 - Just a simple anchor tag ``<a href="javascript:(function(){alert('Hello world!')})()"> Weird things about to happen </a>``
 - To create script element and src to an external js file. 
-``<a href="javascript: function(){let jss = document.createElement('script');jss.src="externalJsFile.js";document.appendChild(jss);})()"> Weird things about to happen </a>``
+``(function(){let jss = document.createElement('script');jss.src="externalJsFile.js?date="+new Date().getTime();document.appendChild(jss);})()``
 
 
 
